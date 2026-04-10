@@ -61,25 +61,25 @@ export default function About() {
             <span className="text-luxury-gold uppercase tracking-widest text-sm mb-4 block font-medium">
               The Project
             </span>
-            <h2 className="text-4xl md:text-6xl text-luxury-blue mb-8 leading-tight">
+            <h2 className="text-4xl md:text-6xl text-luxury-charcoal mb-8 leading-tight">
               A Legacy of <br />
               <span className="italic">Sophistication</span>
             </h2>
-            <p className="text-luxury-blue/70 text-lg leading-relaxed mb-8 max-w-xl">
+            <p className="text-luxury-charcoal/70 text-lg leading-relaxed mb-8 max-w-xl">
               Hanoi Elite Residence represents the pinnacle of urban living. 
               Every detail has been meticulously crafted to provide an 
               unparalleled residential experience for those who demand the very best.
             </p>
             <div className="flex items-center gap-4">
               <div className="w-12 h-[1px] bg-luxury-gold" />
-              <span className="text-luxury-blue font-serif italic text-xl">
+              <span className="text-luxury-charcoal font-serif italic text-xl">
                 Designed for the Elite
               </span>
             </div>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm group">
             <img
-              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200"
+              src="https://images.unsplash.com/photo-1600607687940-47a04b629571?auto=format&fit=crop&q=80&w=1200"
               alt="Luxury Interior"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -92,13 +92,13 @@ export default function About() {
           {highlights.map((item, idx) => (
             <div
               key={idx}
-              className="p-10 bg-luxury-blue text-white rounded-sm hover:bg-luxury-gold transition-colors duration-500 group"
+              className="p-10 bg-white text-luxury-charcoal border border-luxury-gold/20 rounded-sm hover:border-luxury-gold hover:shadow-xl transition-all duration-500 group"
             >
-              <div className="text-luxury-gold group-hover:text-white transition-colors duration-500 mb-6">
+              <div className="text-luxury-gold mb-6">
                 {item.icon}
               </div>
               <h3 className="text-2xl mb-4">{item.title}</h3>
-              <p className="text-white/60 group-hover:text-white/90 transition-colors duration-500 text-sm leading-relaxed">
+              <p className="text-luxury-charcoal/60 group-hover:text-luxury-charcoal/80 transition-colors duration-500 text-sm leading-relaxed">
                 {item.desc}
               </p>
             </div>

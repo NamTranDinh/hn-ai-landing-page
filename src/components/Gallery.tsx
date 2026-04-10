@@ -58,13 +58,13 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-luxury-blue px-6">
+    <section id="gallery" className="py-24 md:py-32 bg-luxury-gray px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <span className="text-luxury-gold uppercase tracking-widest text-sm mb-4 block font-medium">
             Visual Experience
           </span>
-          <h2 className="text-4xl md:text-6xl text-white leading-tight">
+          <h2 className="text-4xl md:text-6xl text-luxury-charcoal leading-tight">
             The Art of <span className="italic">Living</span>
           </h2>
         </div>
@@ -87,7 +87,7 @@ export default function Gallery() {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-luxury-blue/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <div className="absolute inset-0 bg-luxury-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                 <div className="text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                   <h3 className="text-white text-xl font-serif mb-2">{img.title}</h3>
                   <div className="w-8 h-[1px] bg-luxury-gold mx-auto" />

@@ -17,12 +17,12 @@ export default function Contact() {
       {/* CTA Banner */}
       <div className="relative h-[400px] flex items-center justify-center overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=2000"
+          src="https://images.unsplash.com/photo-1600607687940-47a04b629571?auto=format&fit=crop&q=80&w=2000"
           alt="Luxury View"
           className="absolute inset-0 w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-luxury-blue/70" />
+        <div className="absolute inset-0 bg-luxury-charcoal/70" />
         <div className="relative z-10 text-center px-6">
           <h2 className="text-4xl md:text-6xl text-white mb-8">
             Ready to <span className="italic">Elevate</span> Your Life?
@@ -35,20 +35,20 @@ export default function Contact() {
       </div>
 
       {/* Contact Form */}
-      <div className="bg-white py-24 px-6 -mt-20 relative z-20 max-w-4xl mx-auto shadow-2xl rounded-sm border border-luxury-blue/5">
+      <div className="bg-white py-24 px-6 -mt-20 relative z-20 max-w-4xl mx-auto shadow-2xl rounded-sm border border-luxury-charcoal/5">
         <div className="text-center mb-12">
-          <h3 className="text-3xl text-luxury-blue mb-4">Get in Touch</h3>
-          <p className="text-luxury-blue/50 text-sm">Fill out the form below and we'll get back to you within 24 hours.</p>
+          <h3 className="text-3xl text-luxury-charcoal mb-4">Get in Touch</h3>
+          <p className="text-luxury-charcoal/50 text-sm">Fill out the form below and we'll get back to you within 24 hours.</p>
         </div>
 
         {formState === 'success' ? (
           <div className="flex flex-col items-center justify-center py-12 text-center animate-in fade-in zoom-in duration-500">
             <CheckCircle className="w-20 h-20 text-luxury-gold mb-6" />
-            <h4 className="text-2xl text-luxury-blue mb-2">Thank You!</h4>
-            <p className="text-luxury-blue/60">Your message has been received. Our team will contact you shortly.</p>
+            <h4 className="text-2xl text-luxury-charcoal mb-2">Thank You!</h4>
+            <p className="text-luxury-charcoal/60">Your message has been received. Our team will contact you shortly.</p>
             <button 
               onClick={() => setFormState('idle')}
-              className="mt-8 text-luxury-gold uppercase tracking-widest text-xs font-bold hover:text-luxury-blue transition-colors"
+              className="mt-8 text-luxury-gold uppercase tracking-widest text-xs font-bold hover:text-luxury-charcoal transition-colors"
             >
               Send Another Message
             </button>
@@ -56,38 +56,38 @@ export default function Contact() {
         ) : (
           <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-2">
-              <label className="text-[10px] uppercase tracking-widest font-bold text-luxury-blue/40">Full Name</label>
+              <label className="text-[10px] uppercase tracking-widest font-bold text-luxury-charcoal/40">Full Name</label>
               <input
                 required
                 type="text"
                 placeholder="John Doe"
-                className="w-full px-0 py-3 border-b border-luxury-blue/10 focus:border-luxury-gold outline-none transition-colors bg-transparent text-luxury-blue"
+                className="w-full px-0 py-3 border-b border-luxury-charcoal/10 focus:border-luxury-gold outline-none transition-colors bg-transparent text-luxury-charcoal"
               />
             </div>
             <div className="space-y-2">
-              <label className="text-[10px] uppercase tracking-widest font-bold text-luxury-blue/40">Phone Number</label>
+              <label className="text-[10px] uppercase tracking-widest font-bold text-luxury-charcoal/40">Phone Number</label>
               <input
                 required
                 type="tel"
                 placeholder="+84 123 456 789"
-                className="w-full px-0 py-3 border-b border-luxury-blue/10 focus:border-luxury-gold outline-none transition-colors bg-transparent text-luxury-blue"
+                className="w-full px-0 py-3 border-b border-luxury-charcoal/10 focus:border-luxury-gold outline-none transition-colors bg-transparent text-luxury-charcoal"
               />
             </div>
             <div className="md:col-span-2 space-y-2">
-              <label className="text-[10px] uppercase tracking-widest font-bold text-luxury-blue/40">Email Address</label>
+              <label className="text-[10px] uppercase tracking-widest font-bold text-luxury-charcoal/40">Email Address</label>
               <input
                 required
                 type="email"
                 placeholder="john@example.com"
-                className="w-full px-0 py-3 border-b border-luxury-blue/10 focus:border-luxury-gold outline-none transition-colors bg-transparent text-luxury-blue"
+                className="w-full px-0 py-3 border-b border-luxury-charcoal/10 focus:border-luxury-gold outline-none transition-colors bg-transparent text-luxury-charcoal"
               />
             </div>
             <div className="md:col-span-2 space-y-2">
-              <label className="text-[10px] uppercase tracking-widest font-bold text-luxury-blue/40">Message (Optional)</label>
+              <label className="text-[10px] uppercase tracking-widest font-bold text-luxury-charcoal/40">Message (Optional)</label>
               <textarea
                 rows={4}
                 placeholder="I'm interested in the 3-bedroom apartment..."
-                className="w-full px-0 py-3 border-b border-luxury-blue/10 focus:border-luxury-gold outline-none transition-colors bg-transparent text-luxury-blue resize-none"
+                className="w-full px-0 py-3 border-b border-luxury-charcoal/10 focus:border-luxury-gold outline-none transition-colors bg-transparent text-luxury-charcoal resize-none"
               ></textarea>
             </div>
             <div className="md:col-span-2 flex justify-center mt-8">

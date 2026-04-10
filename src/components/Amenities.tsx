@@ -48,12 +48,12 @@ export default function Amenities() {
             <span className="text-luxury-gold uppercase tracking-widest text-sm mb-4 block font-medium">
               World-Class Facilities
             </span>
-            <h2 className="text-4xl md:text-6xl text-luxury-blue leading-tight">
+            <h2 className="text-4xl md:text-6xl text-luxury-charcoal leading-tight">
               Designed for Your <br />
               <span className="italic">Ultimate Comfort</span>
             </h2>
           </div>
-          <p className="text-luxury-blue/60 max-w-md text-sm leading-relaxed">
+          <p className="text-luxury-charcoal/60 max-w-md text-sm leading-relaxed">
             Every amenity at Hanoi Elite Residence is designed to enhance your lifestyle, 
             providing a perfect balance of wellness, productivity, and relaxation.
           </p>
@@ -62,11 +62,11 @@ export default function Amenities() {
         <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
           {amenities.map((item, idx) => (
             <div key={idx} className="group">
-              <div className="w-14 h-14 bg-luxury-blue/5 flex items-center justify-center text-luxury-blue mb-6 group-hover:bg-luxury-gold group-hover:text-white transition-all duration-500 rounded-sm">
+              <div className="w-14 h-14 bg-luxury-charcoal/5 flex items-center justify-center text-luxury-charcoal mb-6 group-hover:bg-luxury-gold group-hover:text-white transition-all duration-500 rounded-sm">
                 {item.icon}
               </div>
               <h3 className="text-xl mb-3 font-serif">{item.title}</h3>
-              <p className="text-luxury-blue/50 text-sm leading-relaxed">
+              <p className="text-luxury-charcoal/50 text-sm leading-relaxed">
                 {item.desc}
               </p>
             </div>

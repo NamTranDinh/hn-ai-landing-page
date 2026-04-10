@@ -65,13 +65,13 @@ export default function Hero() {
         ref={bgRef}
         className="absolute inset-0 z-0 scale-110"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=2000")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-luxury-blue/40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-luxury-blue/60 via-transparent to-luxury-blue/80" />
+        <div className="absolute inset-0 bg-luxury-charcoal/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-luxury-charcoal/40 via-transparent to-luxury-charcoal/60" />
       </div>
 
       {/* Content */}
@@ -97,7 +97,7 @@ export default function Hero() {
           <button className="btn-premium-gold w-full sm:w-auto">
             Get Consultation
           </button>
-          <button className="btn-premium-outline !text-white !border-white hover:!bg-white hover:!text-luxury-blue w-full sm:w-auto">
+          <button className="btn-premium-outline !text-white !border-white hover:!bg-white hover:!text-luxury-charcoal w-full sm:w-auto">
             View Gallery
           </button>
         </div>

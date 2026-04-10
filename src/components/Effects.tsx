@@ -20,7 +20,7 @@ export function Preloader() {
   if (!isLoading) return null;
 
   return (
-    <div className="preloader fixed inset-0 z-[100] bg-luxury-blue flex flex-col items-center justify-center">
+    <div className="preloader fixed inset-0 z-[100] bg-luxury-charcoal flex flex-col items-center justify-center">
       <div className="relative mb-8">
         <div className="w-24 h-24 border border-luxury-gold/20 rounded-full animate-[spin_4s_linear_infinite]" />
         <div className="absolute inset-0 flex items-center justify-center">

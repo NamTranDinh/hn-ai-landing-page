@@ -9,18 +9,18 @@ export default function Location() {
   ];
 
   return (
-    <section id="location" className="py-24 md:py-32 bg-luxury-blue/5 px-6">
+    <section id="location" className="py-24 md:py-32 bg-luxury-gray px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-luxury-gold uppercase tracking-widest text-sm mb-4 block font-medium">
               The Neighborhood
             </span>
-            <h2 className="text-4xl md:text-6xl text-luxury-blue mb-8 leading-tight">
+            <h2 className="text-4xl md:text-6xl text-luxury-charcoal mb-8 leading-tight">
               In the Heart of <br />
               <span className="italic">Hanoi</span>
             </h2>
-            <p className="text-luxury-blue/70 text-lg mb-12 max-w-xl">
+            <p className="text-luxury-charcoal/70 text-lg mb-12 max-w-xl">
               Located in a prime area with easy access to the city's most 
               vibrant business and cultural hubs. Experience the best of 
               Hanoi right at your doorstep.
@@ -28,12 +28,12 @@ export default function Location() {
 
             <div className="space-y-6">
               {nearby.map((item, idx) => (
-                <div key={idx} className="flex items-center justify-between p-4 bg-white rounded-sm shadow-sm border border-luxury-blue/5">
+                <div key={idx} className="flex items-center justify-between p-4 bg-white rounded-sm shadow-sm border border-luxury-charcoal/5">
                   <div className="flex items-center gap-4">
                     <div className="text-luxury-gold">{item.icon}</div>
-                    <span className="font-medium text-luxury-blue">{item.name}</span>
+                    <span className="font-medium text-luxury-charcoal">{item.name}</span>
                   </div>
-                  <span className="text-xs text-luxury-blue/40 uppercase tracking-widest">{item.dist}</span>
+                  <span className="text-xs text-luxury-charcoal/40 uppercase tracking-widest">{item.dist}</span>
                 </div>
               ))}
             </div>
